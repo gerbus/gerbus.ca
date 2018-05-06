@@ -1,12 +1,6 @@
 /* Google Fonts */
 @import url('http://fonts.googleapis.com/css?family=Vollkorn');
 
-/* Custom Variables */
-/*@body-bg: #000;
-@text-color: #666;
-@font-family-base: 'Vollkorn', serif;
-@font-size-base: 16px;*/
-
 /* Generics */
 body {
   padding: 30px;
@@ -14,6 +8,9 @@ body {
   color: #666;
   font-family: 'Vollkorn', serif;
   font-size: 16px;
+}
+header {
+  text-align: center;
 }
 h1 {
   color: #fff;
@@ -61,16 +58,7 @@ a:hover {
 }
 
 
-/* Misc */
-.page {
-  margin: 0 auto;
-  max-width: 1400px;
-}
-
-header {
-  text-align: center;
-}
-
+/* Custom */
 @media (min-width: 992px) {
   .div-links {
     margin-top: 80px;
@@ -81,7 +69,6 @@ header {
     margin-top: 160px;
   }
 }
-
 .links {
   position: relative;
   padding-left: 0;
@@ -92,8 +79,6 @@ header {
     margin-top: 30px;
   }
 }
-
-
 .links li {
   text-align: center;
   border: 1px solid #000;
@@ -117,8 +102,6 @@ header {
 .links li:hover a img {
   opacity: 1;
 }
-
-
 .wordpress a {
   height: 60px;
   overflow: hidden;
@@ -127,64 +110,3 @@ header {
   margin-top: -44px;
   margin-left: -10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.github a {
-      background: url("img/GitHub_Logo_White.png") center no-repeat;
-      background-size: auto 40px;
-    }
-    .stackexchange a {
-      background: url("img/stackexchange-logo.png") center no-repeat;
-    }
-    .linkedin a {
-      background: url("img/logo_linkedin_flat_white_93x21.png") center no-repeat;
-    }
-    .tumblr a {
-      background: url("img/tumblr-logo.png") center no-repeat;
-      background-size: auto 20px;
-    }
-    .letterboxd a {
-      background: url("img/letterboxd-logo-153.png") center no-repeat;
-    }
-    .twitter a {
-      background: url("img/Twitter_logo_blue_48.png") center no-repeat;
-      background-size: 24px 24px;
-    }
-    .grooveshark a {
-      background: url("img/grooveshark-logo.png") center no-repeat;
-    }
-    .soundcloud-mp a,
-    .soundcloud-ss a {
-      background: url("img/soundcloud-logo.jpg") center no-repeat;
-      background-size: 40px;
-    }
-    .wordpress a {
-      background: url("img/wordpress.png") center no-repeat;
-      background-size: 170px;
-    }
-    .footstops a {
-      background: url("img/footsteps.png") center no-repeat;
-      background-size: 170px;
-    }*/
