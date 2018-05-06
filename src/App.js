@@ -5,9 +5,16 @@ import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
-import Gerb from './images/Gerb-38frame_blink.gif';
-import GitHub from './images/GitHub_Logo_White.png';
-
+// Images
+import Gerb from './img/Gerb-38frame_blink.gif';
+import GitHub from './img/GitHub_Logo_White.png';
+import StackExchange from './img/stackexchange-logo.png';
+import LinkedIn from './img/logo_linkedin_flat_white_93x21.png';
+import Tumblr from './img/tumblr-logo.png';
+import LetterBoxd from './img/letterboxd-logo-153.png';
+import Twitter from './img/Twitter_logo_blue_48.png';
+import SoundCloud from './img/soundcloud-logo.jpg';
+import WordPress from './img/wordpress.png';
 
 class App extends Component {
   render() {
@@ -36,8 +43,16 @@ class App extends Component {
                   <img src={GitHub} height='40' />
                 </a>
               </li>
-              <li className="stackexchange" title="My StackExchange"><a href="http://stackexchange.com/users/115692/gerbus?tab=accounts"></a></li>
-              <li className="linkedin" title="My Career"><a href="http://ca.linkedin.com/pub/christopher-gerber/1b/57b/7b7/en"></a></li>
+              <li className="stackexchange" title="My StackExchange">
+                <a href="http://stackexchange.com/users/115692/gerbus?tab=accounts">
+                  <img src={StackExchange} />
+                </a>
+              </li>
+              <li className="linkedin" title="My Career">
+                <a href="http://ca.linkedin.com/pub/christopher-gerber/1b/57b/7b7/en">
+                  <img src={LinkedIn} />
+                </a>
+              </li>
             </ul>
           </div>
           <div className="col-sm-6 heels hidden-xs">
@@ -52,14 +67,34 @@ class App extends Component {
           <div className="col-sm-3 hat heels div-links">
             <h2 className="pull-top text-center">Personal</h2>
             <ul className="links">
-              <li className="tumblr" title="My Animations"><a href="http://gerbus.tumblr.com/"></a></li>
-              <li className="letterboxd" title="My Movie Reviews"><a href="http://letterboxd.com/gerbus/"></a></li>
-              <li className="twitter" title="My Tweets"><a href="https://twitter.com/Gerbus3"></a></li>
-              <li className="soundcloud-ss" title="My Music as SuperSymmetry"><a href="https://soundcloud.com/supersymmetry"></a></li>
+              <li className="tumblr" title="My Animations">
+                <a href="http://gerbus.tumblr.com/">
+                  <img src={Tumblr} />
+                </a>
+              </li>
+              <li className="letterboxd" title="My Movie Reviews">
+                <a href="http://letterboxd.com/gerbus/">
+                  <img src={LetterBoxd} />
+                </a>
+              </li>
+              <li className="twitter" title="My Tweets">
+                <a href="https://twitter.com/Gerbus3">
+                  <img src={Twitter} width='24' />  
+                </a>
+              </li>
+              <li className="soundcloud-ss" title="My Music as SuperSymmetry">
+                <a href="https://soundcloud.com/supersymmetry">
+                  <img src={SoundCloud} width='40' />  
+                </a>
+              </li>
               { 
               //<!--li className="soundcloud-mp" title="My Sounds as MaxPepTalk ~ 2012"><a href="https://soundcloud.com/max-peptalk"></a></li--> 
               }
-              <li className="wordpress" title="My Blog"><a href="https://fractalsinlaughter.wordpress.com"></a></li>
+              <li className="wordpress" title="My Blog">
+                <a href="https://fractalsinlaughter.wordpress.com">
+                  <img src={WordPress} width="170" />  
+                </a>
+              </li>
               { 
               //<!--li className="wordpress" title="My Travel Blog ~ 2015"><a href="https://thegerberklompas.wordpress.com/"></a></li>
               //<li className="footstops" title="My Travel Blogs ~ 2009, 2011"><a href="http://www.footstops.com/gerbus/trips/"></a></li--> 
