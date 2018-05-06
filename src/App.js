@@ -38,17 +38,17 @@ class App extends Component {
           <div className="col-sm-3 hat heels div-links">
             <h2 className="pull-top text-center">Professional</h2>
             <ul className="links">
-              <li className="github" title="My Github">
+              <li title="My Github">
                 <a href="https://github.com/gerbus">
                   <img src={GitHub} height='40' />
                 </a>
               </li>
-              <li className="stackexchange" title="My StackExchange">
+              <li title="My StackExchange">
                 <a href="http://stackexchange.com/users/115692/gerbus?tab=accounts">
                   <img src={StackExchange} />
                 </a>
               </li>
-              <li className="linkedin" title="My Career">
+              <li title="My Career">
                 <a href="http://ca.linkedin.com/pub/christopher-gerber/1b/57b/7b7/en">
                   <img src={LinkedIn} />
                 </a>
@@ -67,22 +67,22 @@ class App extends Component {
           <div className="col-sm-3 hat heels div-links">
             <h2 className="pull-top text-center">Personal</h2>
             <ul className="links">
-              <li className="tumblr" title="My Animations">
+              <li title="My Animations">
                 <a href="http://gerbus.tumblr.com/">
                   <img src={Tumblr} />
                 </a>
               </li>
-              <li className="letterboxd" title="My Movie Reviews">
+              <li title="My Movie Reviews">
                 <a href="http://letterboxd.com/gerbus/">
                   <img src={LetterBoxd} />
                 </a>
               </li>
-              <li className="twitter" title="My Tweets">
+              <li title="My Tweets">
                 <a href="https://twitter.com/Gerbus3">
                   <img src={Twitter} width='24' />  
                 </a>
               </li>
-              <li className="soundcloud-ss" title="My Music as SuperSymmetry">
+              <li title="My Music as SuperSymmetry">
                 <a href="https://soundcloud.com/supersymmetry">
                   <img src={SoundCloud} width='40' />  
                 </a>
