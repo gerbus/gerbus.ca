@@ -23,11 +23,13 @@ h1 {
 h2 {
   font-size: 36px;
 }
-a {
+a, a:active, a:visited {
   color: #ddd;
+  text-decoration: none;
 }
 a:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 
@@ -108,9 +110,6 @@ header {
   padding: 10px;
   vertical-align: middle;
   display: block;
-}
-.links li a:hover {
-  text-decoration: none;
 }
 .links li a img {
   opacity: 0.8;
