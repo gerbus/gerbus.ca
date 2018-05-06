@@ -1,28 +1,136 @@
-.App {
+/* Google Fonts */
+@import url('http://fonts.googleapis.com/css?family=Vollkorn');
+
+/* Custom Variables */
+/*@body-bg: #000;
+@text-color: #666;
+@font-family-base: 'Vollkorn', serif;
+@font-size-base: 16px;*/
+
+/* Generics */
+body {
+  padding: 30px;
+  background-color: #000;
+  color: #666;
+  font-family: 'Vollkorn', serif;
+  font-size: 16px;
+}
+h1 {
+  color: #fff;
+  text-shadow: 0px 2px 0px #433;
+  font-size: 41px;
+}
+h2 {
+  font-size: 36px;
+}
+
+
+/* Custom Utility Classes */
+.pull-top {
+  margin-top: 0;
+}
+.pull-top-hard {
+  margin-top: 0;
+  line-height: 1;
+}
+.heels-half {
+  margin-bottom: 15px;
+}
+.heels {
+  margin-bottom: 30px;
+}
+.heels-double {
+  margin-bottom: 60px;
+}
+.hat-half {
+  margin-top: 15px;
+}
+.hat {
+  margin-top: 30px;
+}
+.hat-double {
+  margin-top: 60px;
+}
+
+
+/* Misc */
+.page {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+header {
   text-align: center;
 }
+.div-links {
+  @media (min-width: @screen-md) {
+    margin-top: 80px;
+  }
+  @media (min-width: @screen-lg) {
+    margin-top: 160px;
+  }
+}
+.links {
+  position: relative;
+  padding-left: 0;
+  list-style: none;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  @media (min-width: @screen-xs) {
+    margin-top: 30px;
+  }
+}
+.links li {
+    text-align: center;
+    border: 1px solid #000;
+    transition: border-color 1s ease-out;
+    position: relative;
+    z-index: 1;
+}
+.links li.outline {
+  transition: border-color 0.1s;
+  border-color: #880;	
+  z-index: 2;
+}
+.links li a { 
+  padding: 10px;
+  vertical-align: middle;
+  display: block;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+    /*.github a {
+      background: url("img/GitHub_Logo_White.png") center no-repeat;
+      background-size: auto 40px;
+    }
+    .stackexchange a {
+      background: url("img/stackexchange-logo.png") center no-repeat;
+    }
+    .linkedin a {
+      background: url("img/logo_linkedin_flat_white_93x21.png") center no-repeat;
+    }
+    .tumblr a {
+      background: url("img/tumblr-logo.png") center no-repeat;
+      background-size: auto 20px;
+    }
+    .letterboxd a {
+      background: url("img/letterboxd-logo-153.png") center no-repeat;
+    }
+    .twitter a {
+      background: url("img/Twitter_logo_blue_48.png") center no-repeat;
+      background-size: 24px 24px;
+    }
+    .grooveshark a {
+      background: url("img/grooveshark-logo.png") center no-repeat;
+    }
+    .soundcloud-mp a,
+    .soundcloud-ss a {
+      background: url("img/soundcloud-logo.jpg") center no-repeat;
+      background-size: 40px;
+    }
+    .wordpress a {
+      background: url("img/wordpress.png") center no-repeat;
+      background-size: 170px;
+    }
+    .footstops a {
+      background: url("img/footsteps.png") center no-repeat;
+      background-size: 170px;
+    }*/
