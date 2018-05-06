@@ -81,10 +81,11 @@ a:hover {
 }
 .links li {
   text-align: center;
-  border: 1px solid #000;
+  border: 1px solid rgba(0,0,0,0);
   transition: border-color 1s ease-out;
   position: relative;
   z-index: 1;
+  margin-top: -1px;
 }
 .links li:hover {
   transition: border-color 0.3s;
