@@ -119,16 +119,14 @@ a:hover {
 /* Parallax */
 /* https://keithclark.co.uk/articles/pure-css-parallax-websites/ */
 .parallax {
-  perspective: 400px;
+  perspective: 1000px;
   height: 100vh;
-}
-.parallax {
   overflow-x: hidden;
   overflow-y: auto;
 }
 .parallax-group {
   position: relative;
-  height: 100vh;
+  height: 200vh;
   transform-style: preserve-3d;
   transition: transform 0.5s;
 }
@@ -143,25 +141,25 @@ a:hover {
 }
 /* scale = 1 + (-translateZ / perspective) */
 /* perspective = 400 */
-.parallax-0 {  /* Farthest back */
-  transform: translateZ(-800px) scale(3);
-  height: 100vh;
+.stars {  /* Farthest back */
+  transform: translateZ(-10000px) scale(11);
+  height: 50vh;
 }
-.parallax-1 {
-  transform: translateZ(-200px) scale(1.5);
+.clouds {
+  transform: translateZ(-4000px) scale(5);
   z-index: 2;
 }
-.parallax-2 {
-  transform: translateZ(-80px) scale(1.2);
+.trees {
+  transform: translateZ(-3000px) scale(4);
   z-index: 1;
 }
-.parallax-base {   /* Closest */
+.base {   /* Closest */
   transform: translateZ(0px) scale(1);
 }
 
 
 /* Background */
-.stars {
+.stars .bg {
   position: absolute;
   height: 1276px;
   width: 1920px;
@@ -176,28 +174,28 @@ a:hover {
   50% { transform: translate(-55%, -70%) rotateZ(15deg); }
   100% { transform: translate(-55%, -70%) rotateZ(0deg); }
 }
-.clouds {
+.clouds .bg {
   position: absolute;
   background-repeat: repeat-x;
   height: 527px;
   width: 3372px;
-  top: -200px;
+  /*top: -200px;*/
   animation: blowing-clouds 600s linear infinite;
 }
 @keyframes blowing-clouds {
   from { transform: translate3d(-1686px,0,0); }
   to { transform: translate3d(0,0,0); }
 }
-.treeline {
+.trees .treeline {
   position: relative;
-  top: -150px;
+  /*top: -150px;*/
 }
-.treeline-black {
+.trees .black {
   position: relative;
   background-color: black;
   height: 100vh;
   width: 100vw;
-  top: -645px;
+  /*top: -645px;*/
 }
 .bird {
   position: absolute;

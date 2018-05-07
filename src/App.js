@@ -27,22 +27,22 @@ class App extends Component {
     return (
       <div className="parallax">
         <div className="parallax-group">
-          <div className="parallax-layer parallax-0">
-            <div className="stars" style={{ backgroundImage: "url(" + stars + ")"}} />
+          <div className="stars parallax-layer">
+            <div className="bg" style={{ backgroundImage: "url(" + stars + ")"}} />
           </div>
 
-          <div className="parallax-layer parallax-1">
-            <div className="clouds" style={{ backgroundImage: "url(" + clouds + ")"}} />
+          <div className="clouds parallax-layer">
+            <div className="bg" style={{ backgroundImage: "url(" + clouds + ")"}} />
           </div>
 
-          <div className="parallax-layer parallax-2">
+          <div className="trees parallax-layer">
             <img className="treeline" src={treeline} />
-            <div className="treeline-black"></div>
+            <div className="xblack"></div>
             <div className="bird" style={{backgroundImage: "url(" + bird + ")"}}></div>
             <div className="bird bird-2" style={{backgroundImage: "url(" + bird + ")"}}></div>
           </div>
 
-          <div className="parallax-layer parallax-base">
+          <div className="base parallax-layer">
             <Content />
           </div>
         </div>
