@@ -112,7 +112,7 @@ class App extends Component {
               <li title="Compare bitcoin price history with google search history"><a href="http://bitcoin.gerbus.ca" target="_blank" rel="noopener">Bitcoin Price vs Internet Searches (2017-Nov)</a></li>
               <li title="A craigslist front-end and enhanced filter"><a href="http://old.gerbus.ca/craigslist" target="_blank" rel="noopener">(broken) The Gerbus Craigslist Front End (2015-Jun)</a></li>
               <li title="Our wedding rsvp website"><a href="http://old.gerbus.ca/sites/ourwedding" target="_blank" rel="noopener">Chris Gerber + Laura Klompas (2014)</a></li>
-              <li title="A different take on blogging"><a href="http://old.gerbus.ca/newmemory/index.php" target="_blank" rel="noopener">(ancient) Computer is the New Memory (2010-Jul)</a></li>
+              <li title="A different take on blogging"><a href="http://old.gerbus.ca/newmemory/index.php?n=&filter=" target="_blank" rel="noopener">(ancient) Computer is the New Memory (2010-Jul)</a></li>
               <li title="A get-rich-quick idea">(deleted) Spheres of the Web (2009-Sep)</li>
               <li title="A gallery I built"><a href="http://old.gerbus.ca/photography/index.php" target="_blank" rel="noopener">Photography by Chris Gerber (2009-Jul)</a></li>
               <li title="A phpBB forum I built and ran">(lost) The Gerbus Forum "gerbus dot ca" (2003)</li>
