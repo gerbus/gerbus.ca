@@ -1,9 +1,9 @@
 /* Google Fonts */
 @import url('http://fonts.googleapis.com/css?family=Vollkorn');
 
+
 /* Generics */
 body {
-  padding: 30px;
   background-color: #000;
   color: #666;
   font-family: 'Vollkorn', serif;
@@ -14,11 +14,14 @@ header {
 }
 h1 {
   color: #fff;
-  text-shadow: 0px 2px 0px #433;
+  text-shadow: 2px 0 2px #000, 0 2px 2px #000;
   font-size: 41px;
+  background-color: rgba(0,0,0,0.2);
 }
 h2 {
   font-size: 36px;
+  text-decoration: underline;
+  text-shadow: 2px 0 2px #000, 0 2px 2px #000;
 }
 a, a:active, a:visited {
   color: #ddd;
@@ -59,6 +62,12 @@ a:hover {
 
 
 /* Custom */
+.content {
+  padding: 30px;
+}
+img + .from {
+  margin-top: 10px;
+}
 @media (min-width: 992px) {
   .div-links {
     margin-top: 80px;
@@ -81,26 +90,25 @@ a:hover {
 }
 .links li {
   text-align: center;
-  border: 1px solid rgba(0,0,0,0);
-  transition: border-color 1s ease-out;
-  position: relative;
-  z-index: 1;
   margin-top: -1px;
 }
-.links li:hover {
-  transition: border-color 0.3s;
-  border-color: #09d;	
-  z-index: 2;
-}
 .links li a {
+  border: 1px solid rgba(0,0,0,0);
+  transition: border-color 1s ease-out, background-color 1s ease-out;
   padding: 10px;
   vertical-align: middle;
   display: block;
+  background-color: transparent;
+}
+.links li a:hover {
+  transition: border-color 0.3s, background-color 0.3s;
+  border-color: #09d;
+  background-color: rgba(0,0,0,0.7);
 }
 .links li a img {
   opacity: 0.8;
 }
-.links li:hover a img {
+.links a:hover img {
   opacity: 1;
 }
 .wordpress a {
@@ -110,4 +118,110 @@ a:hover {
 .wordpress a img {
   margin-top: -44px;
   margin-left: -10px;
+}
+
+
+/* Parallax */
+/* https://keithclark.co.uk/articles/pure-css-parallax-websites/ */
+.parallax {
+  perspective: 10px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax-group {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  /*transform: translate3d(200px, 0px, -10px) rotateY(.1deg);*/ /* FOR DEBUGGING */
+}
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /*border: 1px white solid;*/ /* FOR DEBUGGING */ 
+}
+/* scale = 1 + (-translateZ / perspective) */
+/* perspective = 400 */
+.stars {  /* Farthest back */
+  transform: translateZ(-10px) scale(2);
+}
+.clouds {
+  transform: translateZ(-4px) scale(1.4);
+}
+.trees {
+  transform: translateZ(-3px) scale(1.3);
+  bottom: -500px;
+}
+
+
+/* Background */
+.stars .bg {
+  position: absolute;
+  height: 1276px;
+  width: 1920px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -70%);
+  /*background-repeat: repeat-x repeat-y;*/
+  /*animation: rotate 360s ease-in-out infinite;*/ /* Made the site choppy */
+}
+@keyframes rotate {
+  0% { transform: translate(-55%, -70%) rotateZ(0deg); }
+  50% { transform: translate(-55%, -70%) rotateZ(15deg); }
+  100% { transform: translate(-55%, -70%) rotateZ(0deg); }
+}
+.clouds .bg {
+  position: absolute;
+  background-repeat: repeat-x;
+  height: 527px;
+  width: 3372px;
+  top: -100px;
+  animation: blowing-clouds 600s linear infinite;
+}
+@keyframes blowing-clouds {
+  from { transform: translate3d(-1686px,0,0); }
+  to { transform: translate3d(0,0,0); }
+}
+.trees .treeline {
+  position: relative;
+  /*top: -150px;*/
+}
+.trees .black {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  top: -425px;
+}
+.bird {
+  position: absolute;
+  top: 300px;
+  left: -20px;
+  height: 20px;
+  width: 20px;
+  animation: flying-bird 40s linear infinite, flapping-bird .5s steps(6) 0s infinite;
+  background-position: 0px 0px;
+}
+.bird-2 {
+  top: 310px;
+  left: -40px;
+  animation: flying-bird 40s linear infinite, flapping-bird-2 .5s steps(6) infinite;
+}
+@keyframes flying-bird {
+  from { transform: translate3d(0,0,0); }
+  to { transform: translate3d(1920px,0,0); }
+}
+@keyframes flapping-bird {
+   from { background-position: -20px; }
+   to { background-position: -140px; }
+}
+@keyframes flapping-bird-2 {
+  from { background-position: 0px; }
+  to { background-position: -120px; }
 }
