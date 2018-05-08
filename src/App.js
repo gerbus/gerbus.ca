@@ -73,17 +73,17 @@ class Content extends Component {
             <h2 className="pull-top text-center">Professional</h2>
             <ul className="links">
               <li title="My Github">
-                <a href="https://github.com/gerbus">
+                <a href="https://github.com/gerbus" target="_blank" rel="noopener">
                   <img src={GitHub} height='40' />
                 </a>
               </li>
               <li title="My StackExchange">
-                <a href="http://stackexchange.com/users/115692/gerbus?tab=accounts">
+                <a href="http://stackexchange.com/users/115692/gerbus?tab=accounts" target="_blank" rel="noopener">
                   <img src={StackExchange} />
                 </a>
               </li>
               <li title="My Career">
-                <a href="http://ca.linkedin.com/pub/christopher-gerber/1b/57b/7b7/en">
+                <a href="http://ca.linkedin.com/pub/christopher-gerber/1b/57b/7b7/en" target="_blank" rel="noopener">
                   <img src={LinkedIn} />
                 </a>
               </li>
@@ -102,22 +102,22 @@ class Content extends Component {
             <h2 className="pull-top text-center">Personal</h2>
             <ul className="links">
               <li title="My Animations">
-                <a href="http://gerbus.tumblr.com/">
+                <a href="http://gerbus.tumblr.com/" target="_blank" rel="noopener">
                   <img src={Tumblr} />
                 </a>
               </li>
               <li title="My Movie Reviews">
-                <a href="http://letterboxd.com/gerbus/">
+                <a href="http://letterboxd.com/gerbus/" target="_blank" rel="noopener">
                   <img src={LetterBoxd} />
                 </a>
               </li>
               <li title="My Tweets">
-                <a href="https://twitter.com/Gerbus3">
+                <a href="https://twitter.com/Gerbus3" target="_blank" rel="noopener">
                   <img src={Twitter} width='24' />  
                 </a>
               </li>
               <li title="My Music as SuperSymmetry">
-                <a href="https://soundcloud.com/supersymmetry">
+                <a href="https://soundcloud.com/supersymmetry" target="_blank" rel="noopener">
                   <img src={SoundCloud} width='40' />  
                 </a>
               </li>
@@ -125,7 +125,7 @@ class Content extends Component {
               //<!--li className="soundcloud-mp" title="My Sounds as MaxPepTalk ~ 2012"><a href="https://soundcloud.com/max-peptalk"></a></li--> 
               }
               <li className="wordpress" title="My Blog">
-                <a href="https://fractalsinlaughter.wordpress.com">
+                <a href="https://fractalsinlaughter.wordpress.com" target="_blank" rel="noopener">
                   <img src={WordPress} width="170" />  
                 </a>
               </li>
