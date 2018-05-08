@@ -6,6 +6,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 // Images
+import stars from './img/stars_1920.jpg';
+import clouds from './img/clouds.png';
+import treeline from './img/treeline-sillouette-100.svg';
+import bird from './img/crow-sprite-9-20px.png';
+
 import Gerb from './img/Gerb-38frame_blink.gif';
 import GitHub from './img/GitHub_Logo_White.png';
 import StackExchange from './img/stackexchange-logo.png';
@@ -16,10 +21,39 @@ import Twitter from './img/Twitter_logo_blue_48.png';
 import SoundCloud from './img/soundcloud-logo.jpg';
 import WordPress from './img/wordpress.png';
 
+
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="parallax">
+        <div className="parallax-group">
+          <div className="stars parallax-layer">
+            <div className="bg" style={{ backgroundImage: "url(" + stars + ")"}} />
+          </div>
+
+          <div className="clouds parallax-layer">
+            <div className="bg" style={{ backgroundImage: "url(" + clouds + ")"}} />
+          </div>
+
+          <div className="trees parallax-layer">
+            <img className="treeline" src={treeline} />
+            <div className="black"></div>
+            <div className="bird" style={{backgroundImage: "url(" + bird + ")"}}></div>
+            <div className="bird bird-2" style={{backgroundImage: "url(" + bird + ")"}}></div>
+          </div>
+
+          <Content />
+          
+        </div>
+      </div>
+    );
+  }
+}
+
+class Content extends Component {
+  render() {
+    return (
+      <div className="content">
         <header>
           <h1>Christopher X Gerber</h1>
         </header>
@@ -30,7 +64,7 @@ class App extends Component {
             //<!--img className="img-responsive" src="/sites/gerbus.ca/img/christopher-x-gerber_light-bw.jpg" /--> 
             }
             <img className="img-responsive" src={Gerb} />
-            <span className="from">Vancouver, BC</span>
+            <div className="from">Vancouver, BC</div>
           </center>
         </div>
 
@@ -61,7 +95,7 @@ class App extends Component {
             //<!--img className="img-responsive" src="/sites/gerbus.ca/img/christopher-x-gerber_light-bw.jpg" /--> 
             }
             <img className="img-responsive" src={Gerb} width="400px" />
-            <span className="from">Vancouver, BC</span>
+            <div className="from">Vancouver, BC</div>
           </center>
           </div>
           <div className="col-sm-3 hat heels div-links">
