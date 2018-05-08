@@ -37,14 +37,13 @@ class App extends Component {
 
           <div className="trees parallax-layer">
             <img className="treeline" src={treeline} />
-            <div className="xblack"></div>
+            <div className="black"></div>
             <div className="bird" style={{backgroundImage: "url(" + bird + ")"}}></div>
             <div className="bird bird-2" style={{backgroundImage: "url(" + bird + ")"}}></div>
           </div>
 
-          <div className="base parallax-layer">
-            <Content />
-          </div>
+          <Content />
+          
         </div>
       </div>
     );
@@ -65,7 +64,7 @@ class Content extends Component {
             //<!--img className="img-responsive" src="/sites/gerbus.ca/img/christopher-x-gerber_light-bw.jpg" /--> 
             }
             <img className="img-responsive" src={Gerb} />
-            <span className="from">Vancouver, BC</span>
+            <div className="from">Vancouver, BC</div>
           </center>
         </div>
 
@@ -96,7 +95,7 @@ class Content extends Component {
             //<!--img className="img-responsive" src="/sites/gerbus.ca/img/christopher-x-gerber_light-bw.jpg" /--> 
             }
             <img className="img-responsive" src={Gerb} width="400px" />
-            <span className="from">Vancouver, BC</span>
+            <div className="from">Vancouver, BC</div>
           </center>
           </div>
           <div className="col-sm-3 hat heels div-links">
