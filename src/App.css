@@ -13,14 +13,21 @@ header {
   text-align: center;
 }
 h1 {
-  color: #fff;
+  color: #ffcb86;
   text-shadow: 2px 0 2px #000, 0 2px 2px #000;
   font-size: 41px;
   background-color: rgba(0,0,0,0.2);
 }
 h2 {
-  font-size: 36px;
-  text-decoration: underline;
+  color: #b66802;
+  font-size: 25px;
+  text-shadow: 2px 0 2px #000, 0 2px 2px #000;
+  margin-top: 0;
+}
+h3 {
+  color: #4ba8d4;
+  font-size: 28px;
+  /*text-decoration: underline;*/
   text-shadow: 2px 0 2px #000, 0 2px 2px #000;
 }
 a, a:active, a:visited {
@@ -59,6 +66,15 @@ a:hover {
 .hat-double {
   margin-top: 60px;
 }
+.hair-half {
+  padding-top: 15px;
+}
+.hair {
+  padding-top: 30px;
+}
+.hair-double {
+  padding-top: 60px;
+}
 
 
 /* Custom */
@@ -68,16 +84,19 @@ a:hover {
 img + .from {
   margin-top: 10px;
 }
+.div-links {
+  background-color: rgba(0,0,0,0.8);
+}
 @media (min-width: 992px) {
   .div-links {
-    margin-top: 80px;
+    padding-top: 80px;
   }
 }
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .div-links {
-    margin-top: 160px;
+    padding-top: 160px;
   }
-}
+}*/
 .links {
   position: relative;
   padding-left: 0;
@@ -102,7 +121,7 @@ img + .from {
 }
 .links li a:hover {
   transition: border-color 0.3s, background-color 0.3s;
-  border-color: #09d;
+  border-color: /*#09d*/#b66802;
   background-color: rgba(0,0,0,0.7);
 }
 .links li a img {
@@ -205,13 +224,13 @@ img + .from {
   left: -20px;
   height: 20px;
   width: 20px;
-  animation: flying-bird 40s linear infinite, flapping-bird .5s steps(6) 0s infinite;
+  /*animation: flying-bird 40s linear infinite, flapping-bird .5s steps(6) 0s infinite;*/
   background-position: 0px 0px;
 }
 .bird-2 {
   top: 310px;
   left: -40px;
-  animation: flying-bird 40s linear infinite, flapping-bird-2 .5s steps(6) infinite;
+  /*animation: flying-bird 40s linear infinite, flapping-bird-2 .5s steps(6) infinite;*/
 }
 @keyframes flying-bird {
   from { transform: translate3d(0,0,0); }

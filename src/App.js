@@ -56,6 +56,7 @@ class Content extends Component {
       <div className="content">
         <header>
           <h1>Christopher X Gerber</h1>
+          <h2>Web Developer</h2>
         </header>
 
         <div className="visible-xs heels">
@@ -69,8 +70,8 @@ class Content extends Component {
         </div>
 
         <div className="row">
-          <div className="col-sm-3 hat heels div-links">
-            <h2 className="pull-top text-center">Professional</h2>
+          <div className="col-sm-3 col-md-3 col-md-offset-1 hair heels div-links">
+            <h3 className="pull-top text-center">Professional</h3>
             <ul className="links">
               <li title="My Github">
                 <a href="https://github.com/gerbus" target="_blank" rel="noopener">
@@ -89,7 +90,7 @@ class Content extends Component {
               </li>
             </ul>
           </div>
-          <div className="col-sm-6 heels hidden-xs">
+          <div className="col-sm-6 col-md-4 heels hidden-xs">
           <center>
             { 
             //<!--img className="img-responsive" src="/sites/gerbus.ca/img/christopher-x-gerber_light-bw.jpg" /--> 
@@ -98,8 +99,8 @@ class Content extends Component {
             <div className="from">Vancouver, BC</div>
           </center>
           </div>
-          <div className="col-sm-3 hat heels div-links">
-            <h2 className="pull-top text-center">Personal</h2>
+          <div className="col-sm-3 col-md-3 hair heels div-links">
+            <h3 className="pull-top text-center">Personal</h3>
             <ul className="links">
               <li title="My Animations">
                 <a href="http://gerbus.tumblr.com/" target="_blank" rel="noopener">
@@ -139,8 +140,9 @@ class Content extends Component {
 
         <div className="row">
           <div className="col-sm-6 col-sm-offset-3">
-            <h2 className="pull-top text-center">Weekend Projects</h2>
+            <h3 className="pull-top text-center">Web Projects</h3>
             <ul className="links">
+              <li title="A calculator for compounding interest with regular contributions"><a href="http://savingscalculator.gerbus.ca" target="_blank" rel="noopener">Savings Calculator (2018-Oct)</a></li>
               <li title="A calendar for the eight season year"><a href="http://8seasons.gerbus.ca" target="_blank" rel="noopener">The Eight Season Year (2018-Mar)</a></li>
               <li title="A low tide predictor for Vancouver, BC"><a href="http://lowtide.gerbus.ca" target="_blank" rel="noopener">Low-tide Predictor for Vancouver (2017-Aug)</a></li>
               <li title="Compare bitcoin price history with google search history"><a href="http://bitcoin.gerbus.ca" target="_blank" rel="noopener">Bitcoin Price vs Internet Searches (2017-Nov)</a></li>
