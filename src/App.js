@@ -144,6 +144,8 @@ class Content extends Component {
             <ul className="links">
               <li title="A productivity app and website"><a href="http://sixinarow.io" target="_blank" rel="noopener">Six In A Row (2018-Nov)</a></li>
             </ul>
+          </div>
+          <div className="col-sm-6 col-sm-offset-3">
             <h3 className="pull-top text-center">Personal Projects</h3>
             <ul className="links">
               <li title="A calculator for compounding interest with regular contributions"><a href="http://savingscalculator.gerbus.ca" target="_blank" rel="noopener">Savings Calculator (2018-Oct)</a></li>
