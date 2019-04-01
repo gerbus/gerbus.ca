@@ -1,4 +1,4 @@
-import React, { 
+import React, {
   Component,
 } from 'react';
 import logo from './logo.svg';
@@ -43,7 +43,7 @@ class App extends Component {
           </div>
 
           <Content />
-          
+
         </div>
       </div>
     );
@@ -61,8 +61,8 @@ class Content extends Component {
 
         <div className="visible-xs heels">
           <center>
-            { 
-            //<!--img className="img-responsive" src="/sites/gerbus.ca/img/christopher-x-gerber_light-bw.jpg" /--> 
+            {
+            //<!--img className="img-responsive" src="/sites/gerbus.ca/img/christopher-x-gerber_light-bw.jpg" /-->
             }
             <img className="img-responsive" src={Gerb} />
             <div className="from">Vancouver, BC</div>
@@ -72,7 +72,7 @@ class Content extends Component {
         <div className="row">
           <div className="col-sm-3 col-md-3 col-md-offset-1 hair heels div-links">
             <h3 className="pull-top text-center">Professional</h3>
-            <ul className="links">
+            <ul className="iconLinks">
               <li title="My Github">
                 <a href="https://github.com/gerbus" target="_blank" rel="noopener">
                   <img src={GitHub} height='40' />
@@ -92,8 +92,8 @@ class Content extends Component {
           </div>
           <div className="col-sm-6 col-md-4 heels hidden-xs">
           <center>
-            { 
-            //<!--img className="img-responsive" src="/sites/gerbus.ca/img/christopher-x-gerber_light-bw.jpg" /--> 
+            {
+            //<!--img className="img-responsive" src="/sites/gerbus.ca/img/christopher-x-gerber_light-bw.jpg" /-->
             }
             <img className="img-responsive" src={Gerb} width="400px" />
             <div className="from">Vancouver, BC</div>
@@ -101,7 +101,7 @@ class Content extends Component {
           </div>
           <div className="col-sm-3 col-md-3 hair heels div-links">
             <h3 className="pull-top text-center">Personal</h3>
-            <ul className="links">
+            <ul className="iconLinks">
               <li title="My Animations">
                 <a href="http://gerbus.tumblr.com/" target="_blank" rel="noopener">
                   <img src={Tumblr} />
@@ -114,39 +114,39 @@ class Content extends Component {
               </li>
               <li title="My Tweets">
                 <a href="https://twitter.com/Gerbus3" target="_blank" rel="noopener">
-                  <img src={Twitter} width='24' />  
+                  <img src={Twitter} width='24' />
                 </a>
               </li>
               <li title="My Music as SuperSymmetry">
                 <a href="https://soundcloud.com/supersymmetry" target="_blank" rel="noopener">
-                  <img src={SoundCloud} width='40' />  
+                  <img src={SoundCloud} width='40' />
                 </a>
               </li>
-              { 
-              //<!--li className="soundcloud-mp" title="My Sounds as MaxPepTalk ~ 2012"><a href="https://soundcloud.com/max-peptalk"></a></li--> 
+              {
+              //<!--li className="soundcloud-mp" title="My Sounds as MaxPepTalk ~ 2012"><a href="https://soundcloud.com/max-peptalk"></a></li-->
               }
               <li className="wordpress" title="My Blog">
                 <a href="https://fractalsinlaughter.wordpress.com" target="_blank" rel="noopener">
-                  <img src={WordPress} width="170" />  
+                  <img src={WordPress} width="170" />
                 </a>
               </li>
-              { 
+              {
               //<!--li className="wordpress" title="My Travel Blog ~ 2015"><a href="https://thegerberklompas.wordpress.com/"></a></li>
-              //<li className="footstops" title="My Travel Blogs ~ 2009, 2011"><a href="http://www.footstops.com/gerbus/trips/"></a></li--> 
+              //<li className="footstops" title="My Travel Blogs ~ 2009, 2011"><a href="http://www.footstops.com/gerbus/trips/"></a></li-->
               }
             </ul>
           </div>
         </div>
 
         <div className="row">
-          <div className="col-sm-6 col-sm-offset-3">
-            <h3 className="pull-top text-center">Business Projects</h3>
+          <div className="col-sm-6 col-sm-offset-3 hair heels hair-none-sm">
+            <h3 className="pull-top text-center">Entrepreneurial</h3>
             <ul className="links">
               <li title="A productivity app and website"><a href="http://sixinarow.io" target="_blank" rel="noopener">Six In A Row (2018-Nov)</a></li>
             </ul>
           </div>
-          <div className="col-sm-6 col-sm-offset-3">
-            <h3 className="pull-top text-center">Personal Projects</h3>
+          <div className="col-sm-6 col-sm-offset-3 hair heels hair-none-sm heels-none-sm">
+            <h3 className="pull-top text-center">Hobby</h3>
             <ul className="links">
               <li title="A calculator for compounding interest with regular contributions"><a href="http://savingscalculator.gerbus.ca" target="_blank" rel="noopener">Savings Calculator (2018-Oct)</a></li>
               <li title="A calendar for the eight season year"><a href="http://8seasons.gerbus.ca" target="_blank" rel="noopener">The Eight Season Year (2018-Mar)</a></li>
@@ -160,7 +160,7 @@ class Content extends Component {
               <li title="A phpBB forum I built and ran">(lost) The Gerbus Forum "gerbus dot ca" (2003)</li>
             </ul>
           </div>
-        </div>	
+        </div>
       </div>
     );
   }

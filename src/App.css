@@ -75,6 +75,14 @@ a:hover {
 .hair-double {
   padding-top: 60px;
 }
+@media (min-width: 767px) {
+  .hair-none-sm {
+    padding-top: 0px;
+  }
+  .heels-none-sm {
+    margin-bottom: 0px;
+  }
+}
 
 
 /* Custom */
@@ -97,21 +105,28 @@ img + .from {
     padding-top: 160px;
   }
 }*/
+
+.iconLinks,
 .links {
   position: relative;
   padding-left: 0;
   list-style: none;
 }
 @media (min-width: 768px) {
-  .links {
+  .iconLinks {
     margin-top: 30px;
     margin-bottom: 40px;
   }
+  .links {
+    margin-bottom: 20px;
+  }
 }
+.iconLinks li,
 .links li {
   text-align: center;
   margin-top: -1px;
 }
+.iconLinks li a,
 .links li a {
   border: 1px solid rgba(0,0,0,0);
   transition: border-color 1s ease-out, background-color 1s ease-out;
@@ -120,15 +135,16 @@ img + .from {
   display: block;
   background-color: transparent;
 }
+.iconLinks li a:hover,
 .links li a:hover {
   transition: border-color 0.3s, background-color 0.3s;
   border-color: /*#09d*/#b66802;
   background-color: rgba(0,0,0,0.7);
 }
-.links li a img {
+.iconLinks li a img {
   opacity: 0.8;
 }
-.links a:hover img {
+.iconLinks a:hover img {
   opacity: 1;
 }
 .wordpress a {
@@ -164,7 +180,7 @@ img + .from {
   left: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  /*border: 1px white solid;*/ /* FOR DEBUGGING */ 
+  /*border: 1px white solid;*/ /* FOR DEBUGGING */
 }
 /* scale = 1 + (-translateZ / perspective) */
 /* perspective = 400 */
