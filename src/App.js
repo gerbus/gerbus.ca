@@ -84,7 +84,7 @@ class Content extends Component {
                 </a>
               </li>
               <li title="My Career">
-                <a href="http://ca.linkedin.com/pub/christopher-gerber/1b/57b/7b7/en" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/chris-gerber-7b757b1b/" target="_blank" rel="noopener">
                   <img src={LinkedIn} />
                 </a>
               </li>
@@ -140,9 +140,12 @@ class Content extends Component {
 
         <div className="row">
           <div className="col-sm-6 col-sm-offset-3">
-            <h3 className="pull-top text-center">Projects</h3>
+            <h3 className="pull-top text-center">Business Projects</h3>
             <ul className="links">
               <li title="A productivity app and website"><a href="http://sixinarow.io" target="_blank" rel="noopener">Six In A Row (2018-Nov)</a></li>
+            </ul>
+            <h3 className="pull-top text-center">Personal Projects</h3>
+            <ul className="links">
               <li title="A calculator for compounding interest with regular contributions"><a href="http://savingscalculator.gerbus.ca" target="_blank" rel="noopener">Savings Calculator (2018-Oct)</a></li>
               <li title="A calendar for the eight season year"><a href="http://8seasons.gerbus.ca" target="_blank" rel="noopener">The Eight Season Year (2018-Mar)</a></li>
               <li title="A low tide predictor for Vancouver, BC"><a href="http://lowtide.gerbus.ca" target="_blank" rel="noopener">Low-tide Predictor for Vancouver (2017-Aug)</a></li>
