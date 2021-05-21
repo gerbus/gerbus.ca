@@ -148,10 +148,11 @@ class Content extends Component {
           <div className="col-sm-6 col-sm-offset-3 hair heels hair-none-sm heels-none-sm">
             <h3 className="pull-top text-center">Hobby</h3>
             <ul className="links">
+              <li title="A statistically generated color spectrum"><a href="http://spectrum.gerbus.ca" target="_blank" rel="noopener">Statistical CSS Color Spectrum (2019-Aug)</a></li>
               <li title="A calculator for compounding interest with regular contributions"><a href="http://savingscalculator.gerbus.ca" target="_blank" rel="noopener">Savings Calculator (2018-Oct)</a></li>
               <li title="A calendar for the eight season year"><a href="http://8seasons.gerbus.ca" target="_blank" rel="noopener">The Eight Season Year (2018-Mar)</a></li>
-              <li title="A low tide predictor for Vancouver, BC"><a href="http://lowtide.gerbus.ca" target="_blank" rel="noopener">Low-tide Predictor for Vancouver (2017-Aug)</a></li>
               <li title="Compare bitcoin price history with google search history"><a href="http://bitcoin.gerbus.ca" target="_blank" rel="noopener">Bitcoin Price vs Internet Searches (2017-Nov)</a></li>
+              <li title="A low tide predictor for Vancouver, BC"><a href="http://lowtide.gerbus.ca" target="_blank" rel="noopener">Low-tide Predictor for Vancouver (2017-Aug)</a></li>
               <li title="A craigslist front-end and enhanced filter"><a href="http://old.gerbus.ca/craigslist" target="_blank" rel="noopener">(broken) The Gerbus Craigslist Front End (2015-Jun)</a></li>
               <li title="Our wedding rsvp website"><a href="http://old.gerbus.ca/sites/ourwedding/index.php" target="_blank" rel="noopener">Chris Gerber + Laura Klompas (2014)</a></li>
               <li title="A different take on blogging"><a href="http://old.gerbus.ca/newmemory/index.php?n=&filter=" target="_blank" rel="noopener">(ancient) Computer is the New Memory (2010-Jul)</a></li>
